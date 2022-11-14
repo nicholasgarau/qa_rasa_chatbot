@@ -1,0 +1,116 @@
+version: "3.1"
+
+entities:
+  - SPID
+
+intents:
+  - greet
+  - goodbye
+  - faq_spid_definition:
+      is_retrieval_intent: true
+  - faq_spid_creation_how_where:
+      is_retrieval_intent: true
+  - faq_spid_creation_cost:
+      is_retrieval_intent: true
+  - faq_spid_time:
+      is_retrieval_intent: true
+  - faq_spid_security_levels:
+      is_retrieval_intent: true
+  - faq_spid_security_personal:
+      is_retrieval_intent: true
+  - faq_spid_abroad_italian:
+      is_retrieval_intent: true
+  - faq_spid_abroad_foreign:
+      is_retrieval_intent: true
+  - faq_spid_firms:
+      is_retrieval_intent: true
+  - faq_spid_credentials:
+      is_retrieval_intent: true
+  - faq_spid_who_provider:
+      is_retrieval_intent: true
+  - faq_spid_who_user:
+      is_retrieval_intent: true
+  - faq_spid_aggregators:
+      is_retrieval_intent: true
+  - bot_challenge
+  - start
+
+responses:
+  utter_greet:
+  - text: "Ciao, sono Simone, assistente SPID, come ti posso aiutare?"
+  - text: "Ciao, sono Simone, se hai domande su SPID chiedimi pure."
+
+  utter_faq_definition:
+  - text: "Il Sistema Pubblico di Identità Digitale (SPID) è un’identità digitale composta da una coppia di credenziali (username e password),
+            strettamente personali, con le quali è possibile accedere ai servizi online della pubblica amministrazione e dei privati aderenti"
+  - text: "SPID è un'identità digitale composta da una coppia di credenziali (username e password) personali, che consente di accedere a servizi online della pubblica amministrazione e di privati aderenti."
+
+  utter_faq_creation_how_where:
+  - text: "Per ottenere le tue credenziali SPID puoi rivolgerti a uno dei gestori di identità (detti identity provider) accreditati dall’Agenzia per l’Italia Digitale (AgID). Al momento i gestori d’identità sono 9: Aruba PEC SpA, In.Te.S.A. SpA, InfoCert SpA, Lepida ScpA, Namirial SpA, Poste Italiane SpA, Register SpA, Sielte SpA e TI Trust Technologies Srl. "
+  - text: "Puoi rivolgerti a uno dei gestori di identità digitale accreditati dall’Agenzia per l’Italia Digitale e reperibili alla pagina Come attivare SPID insieme a tutte le informazioni sulle diverse modalità di riconoscimento attive. Ci sono varie modalità per richiedere SPID: - di persona presso gli uffici dei gestori di identità digitale (identity provider);
+            - via webcam con operatore messo a disposizione dal provider o con un selfie audio-video insieme al versamento di un bonifico bancario (una cifra simbolica utile alla sola verifica dell’identità); - con Carta d'Identità Elettronica (CIE) o passaporto elettronico, identificandoti attraverso le app dei gestori scaricabili dagli store; - con CIE, Carta Nazionale dei Servizi (CNS)
+             - è possibile usare anche la tessera sanitaria - o firma digitale con l’ausilio di un lettore (ad esempio la smart card) e del relativo pin. "
+  - text: "Puoi ottenere SPID da uno dei gestori di identità digitale accreditati dall’Agenzia per l’Italia Digitale. Per maggiori informazioni, visita la pagina Come attivare SPID. Ci sono diversi modi per richiedere SPID: - di persona presso gli uffici dei gestori di identità digitale (identity provider); - via webcam con operatore messo a disposizione dal provider o con un selfie audio-video insieme al versamento di un bonifico bancario (una cifra simbolica utile alla sola verifica dell’identità); - con Carta d'Identità Elettronica (CIE) o passaporto elettronico, identificandoti attraverso le app dei gestori scaricabili dagli store; - con CIE, Carta Nazionale dei Servizi (CNS) - è possibile usare anche la tessera sanitaria - o firma digitale con l’ausilio di un lettore (ad esempio la smart card) e del relativo pin."
+
+  utter_faq_creation_cost:
+  - text: " Esistono modalità di attivazione gratuite o a pagamento che è bene conoscere prima di scegliere il gestore. Una volta ottenuto, l’utilizzo di SPID per il cittadino è gratuito: nessun costo o canone ti verrà richiesto. L’utilizzo di SPID per le aziende è a pagamento "
+  - text: "L’utilizzo di SPID per il cittadino è gratuito, ma puoi attivarlo scegliendo tra modalità gratuite o a pagamento, descritte alla pagina Come scegliere tra i gestori di identità digitale. Una volta ottenuto, nessun costo o canone ti verrà richiesto. L’utilizzo di SPID per le aziende è a pagamento"
+
+  utter_faq_time:
+  - text: "I tempi di emissione delle credenziali cambiano in base al gestore di identità e alle modalità di riconoscimento scelte. Puoi consultare le tempistiche previste da ogni gestore di servizi per ognuna delle diverse modalità di riconoscimento sul sito spid.gov.it."
+  - text: "Le tempistiche per l'emissione delle credenziali variano a seconda del gestore di identità e del metodo di autenticazione scelto. Puoi consultare i tempi previsti da ogni gestore di servizi per ciascuno dei diversi metodi di autenticazione sul sito spid.gov.it."
+
+  utter_faq_security_levels:
+  - text: "L’accesso ai servizi online avviene attraverso la scelta, da parte del fornitore di servizi, di uno dei tre livelli incrementali di sicurezza:
+            il livello 1, con le credenziali SPID dell’utente (nome utente e password);
+            il livello 2, con le credenziali SPID e la generazione di un codice temporaneo di accesso OTP il (one time password) o l’uso di un’ APP fruibile attraverso un dispositivo, come ad esempio uno smartphone;
+            il livello 3, con le credenziali SPID e l’utilizzo di ulteriori soluzioni di sicurezza o di eventuali dispositivi fisici (es. smart card) che vengono erogati dal gestore dell’identità.
+            "
+  - text: "Per accedere ai servizi online, il fornitore di servizi sceglie uno dei tre livelli di sicurezza: il livello 1, con le credenziali SPID dell'utente (nome utente e password);
+            il livello 2, con le credenziali SPID e un codice temporaneo OTP (one time password) o l'uso di un'applicazione accessibile tramite un dispositivo, come ad esempio uno smartphone; il livello 3, con le credenziali SPID e ulteriori soluzioni di sicurezza o eventuali dispositivi fisici (ad es. smart card) forniti dal gestore dell'identità."
+
+  utter_faq_security_personal:
+  - text: "I tuoi dati personali comunicati ai gestori di identità non verranno utilizzati a scopo commerciale. Gli Identity Provider non possono utilizzare i tuoi dati personali né cederli a terze parti senza la tua autorizzazione. Al momento della registrazione i dati necessari all’ottenimento dell’identità digitale SPID saranno esplicitamente distinti dalle informazioni - non obbligatorie - che il gestore di identità potrà eventualmente richiederti. La tua privacy è garantita e il rispetto delle regole di trattamento dei dati è vigilato da AgID e dal Garante per la protezione dei dati personali."
+  - text: "I dati personali che comunichi agli Identity Provider non verranno utilizzati a scopo commerciale. Gli Identity Provider non possono utilizzare i tuoi dati personali né cederli a terze parti senza la tua autorizzazione. I dati necessari all’ottenimento dell’identità digitale SPID saranno chiaramente separati dalle informazioni - non obbligatorie - che il gestore di identità potrebbe eventualmente richiederti. La tua privacy è garantita e il rispetto delle regole sulla gestione dei dati è vigilato da AgID e dal Garante per la protezione dei dati personali."
+
+  utter_faq_abroad_italian:
+  - text: "Devi essere in possesso di un documento di riconoscimento italiano (carta di identità, passaporto, patente) in corso di validità e del tesserino del codice fiscale, di una e-mail e di un numero di cellulare ad uso personale. Sul sito dell’Agenzia per le Entrate puoi verificare la procedura idonea per ottenere il codice fiscale. Infine per attivare SPID puoi rivolgerti ad uno dei  gestori di identità digitale accreditati dall’Agenzia per l’Italia Digitale. Trovi tutte le procedure di attivazione e le informazioni sulle diverse modalità di riconoscimento alla pagina Come attivare SPID. I gestori di identità che consentono il riconoscimento a distanza per chi risiede all'estero sono contrassegnati dall'icona “EU”  o “mondo”."
+  - text: "Per attivare SPID è necessario essere in possesso di un documento di identità italiano valido (carta d'identità, passaporto, patente), un codice fiscale, un indirizzo email e un numero di cellulare personale. La procedura per ottenere il codice fiscale è verificabile sul sito dell'Agenzia delle Entrate. Infine, per attivare SPID, puoi rivolgerti a uno dei fornitori di identità digitale accreditati dell'Agenzia Digitale Italiana. Troverai tutte le procedure di attivazione e le informazioni sulle diverse modalità di riconoscimento alla pagina Come attivare SPID. I provider di identità che consentono il riconoscimento a distanza per i residenti all'estero sono contrassegnati dall'icona 'UE' o 'mondo'"
+
+  utter_faq_abroad_foreign:
+  - text: "Devi essere in possesso di un documento di riconoscimento italiano (come ad esempio la carta di identità) in corso di validità e del tesserino del codice fiscale, di un'e-mail e di un cellulare ad uso personale. Se sei in possesso di un permesso di soggiorno, puoi richiedere la carta di identità italiana e presentarla durante la fase di richiesta di attivazione di SPID.  Sul sito dell’Agenzia per le Entrate puoi verificare la procedura idonea per ottenere il codice fiscale."
+  - text: "Devi avere un valido documento d'identità italiano, come, ad esempio, una carta d'identità, il tuo codice fiscale, un indirizzo e-mail e un cellulare personali. Se hai un permesso di soggiorno, puoi richiedere la carta d'identità italiana e presentarla durante la fase di richiesta di attivazione di SPID. Sul sito web dell'Agenzia delle Entrate puoi controllare la procedura per ottenere il codice fiscale."
+
+  utter_faq_firms:
+  - text: "Il responsabile legale di un’organizzazione (società, ente, impresa, ecc.) può richiedere e utilizzare la propria identità digitale per accedere ai servizi online. A tale scopo è anche possibile dotare i propri dipendenti di identità digitali per uso professionale della persona giuridica. ll rilascio dell’identità digitale per uso professionale per la persona giuridica avviene previa verifica dell’identità personale del richiedente e della legittimità della richiesta da parte di uno dei gestori di identità digitale accreditati dall’Agenzia per l’Italia Digitale, nel rispetto delle modalità e dei controlli previsti da AgID."
+  - text: "Il responsabile legale di un’organizzazione può richiedere e utilizzare la propria identità digitale per accedere ai servizi online. A tale scopo è anche possibile dotare i propri dipendenti di identità digitali per uso professionale della persona giuridica. L’identità digitale per uso professionale per la persona giuridica viene rilasciata previa verifica dell’identità personale del richiedente e della legittimità della richiesta da parte di uno dei gestori di identità digitale accreditati dall’Agenzia per l’Italia Digitale, nel rispetto delle modalità e dei controlli previsti da AgID."
+
+  utter_faq_credentials:
+  - text: "Non è un problema, è sempre possibile recuperare le credenziali. - Se hai richiesto SPID a Aruba segui la procedura di recupero qui: http://guide.pec.it/spid/recupero-dati/procedure-di-recupero-dati-smarriti.aspx - Se hai richiesto SPID a Infocert segui la procedura di recupero qui:  https://my.infocert.it/selfcare/#/recoveryPin - Se hai richiesto SPID a Namirial segui la procedura di recupero qui:  https://portale.namirialtsp.com/private/user/spid_reset.php - Se hai richiesto SPID a Intesa segui la procedura di recupero qui:  https://spid.intesa.it/area-privata/forgot-password.aspx - Se hai richiesto SPID a Poste segui la procedura di recupero qui:  https://posteid.poste.it/recuperocredenziali.shtml - Se hai richiesto SPID a Register segui la procedura di recupero qui: (username dimenticata) https://spid.register.it/selfcare/recovery/username (password dimenticata) https://spid.register.it/selfcare/recovery/password - Se hai richiesto SPID a Sielte segui la procedura di recupero qui: (password dimenticata) https://myid.sieltecloud.it/profile/recovery/forgotPassword - Se hai richiesto SPID a Tim segui la procedura di recupero qui: (username dimenticata) https://login.id.tim.it/mps/fu.php (password dimenticata) https://login.id.tim.it/mps/fp.php - Se hai richiesto SPID a Lepida segui la procedura di recupero qui:  https://id.lepida.it/idm/app/recupero_credenziali.jsp"
+  - text: "Puoi sempre recuperare le credenziali tramite le procedure di recupero indicate ai link di recupero credenziali del provider del servizio."
+
+  utter_faq_who_provider:
+  - text: "Puoi richiedere SPID a uno dei 9 gestori di identity provider (Aruba PEC SpA, In.Te.S.A. SpA, InfoCert SpA, Lepida ScpA, Namirial SpA, Poste Italiane SpA, Register SpA, Sielte SpA e TI Trust Technologies Srl) o puoi attivarlo presso gli uffici abilitati al riconoscimento pubblico: per maggiori info: https://www.spid.gov.it/cos-e-spid/come-attivare-spid/le-pa-per-attivare-spid/"
+
+  utter_faq_who_user:
+  - text: "Tutti i cittadini maggiorenni, in possesso di un documento italiano in corso di validità, possono attivare SPID rivolgendosi ad uno dei gestori dell’identità digitale riconosciuti da AgID e scegliendo tra diverse modalità di riconoscimento."
+  - text: "Tutti i cittadini italiani maggiorenni possono attivare SPID, il Sistema Pubblico di Identità Digitale, rivolgendosi ad uno dei gestori dell’identità digitale riconosciuti da AgID, l’Agenzia per l’Italia Digitale, e scegliendo tra diverse modalità di riconoscimento"
+
+  utter_faq_aggregators:
+  - text: "I soggetti aggregati sono enti pubblici, per esempio le pubbliche amministrazioni locali, come i piccoli comuni, che si rivolgono ai soggetti aggregatori per abilitare i fornitori di servizi SPID, poiché non ritengono conveniente abilitare l’accesso ai propri servizi digitali con SPID autonomamente."
+  - text: "Gli enti pubblici aggregati sono, ad esempio, le piccole amministrazioni locali che si rivolgono ai soggetti aggregatori per consentire ai fornitori di servizi SPID di accedere ai propri servizi digitali, poiché ritengono che sia più conveniente farlo in questo modo piuttosto che farlo autonomamente."
+
+  utter_goodbye:
+  - text: "Ciao, grazie mille per aver usato il servizio!"
+  - text: "Grazie per aver usato il servizio, buona giornata"
+
+  utter_bot_challenge:
+  - text: "Sono un assistente virtuale, mi chiamo Simone, sono stato creato per assistere chi vuol chiedere SPID."
+  - text: "Sono Simone, un bot creato per assisterti nelle informazioni necessarie per chiedere SPID"
+
+  utter_please_rephrase:
+    - text: "Scusa, non ho capito, potresti riformulare la domanda?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,128 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Ehi
+    - Ciao
+    - Buongiorno
+    - Buon pomeriggio
+    - Buonasera
+    - Ehi ciao
+    - Ehi buonasera
+    - Salve
+
+- intent: goodbye
+  examples: |
+    - A presto!
+    - Arrivederci!
+    - Ci sentiamo presto!
+    - Ciao grazie!
+
+- intent: faq_spid_definition
+  examples: |
+    - Che cos'è SPID?
+    - Di cosa [SPID] si tratta?
+    - Cos'è SPID?
+    - Dove posso fare SPID?
+    - Come è fatto l'ecosistema SPID?
+
+- intent: faq_spid_creation_how_where
+  examples: |
+    - Come posso fare SPID?
+    - Dove posso farlo [SPID]?
+    - Dove devo andare per fare SPID?
+    - Cosa devo fare per avere SPID?
+
+- intent: faq_spid_creation_cost
+  examples: |
+    - SPID è gratis?
+    - SPID è gratuito?
+    - è gratuito farlo [SPID]?
+    - è gratis [SPID]?
+    - è gratuito [SPID]?
+    - Quanto costa [SPID]?
+    - Quali sono i prezzi per farlo [SPID]?
+
+- intent: faq_spid_time
+  examples: |
+    - Quanto tempo ci vuole per avere SPID?
+    - Quanto ci mettono a farmi SPID?
+    - In quanto tempo me lo fanno [SPID]?
+    - Quanto ci vuole per fare SPID?
+
+- intent: faq_spid_security_levels
+  examples: |
+    - Quali sono i livelli di sicurezza di SPID?
+    - Cosa sono i tre livelli di sicurezza di SPID?
+    - Mi spieghi i tre livelli di sicurezza di SPID?
+
+- intent: faq_spid_security_personal
+  examples: |
+    - Che fine fanno i miei dati personali?
+    - Come vengono trattati i miei dati personali?
+    - I miei dati sono al sicuro?
+
+- intent: faq_spid_abroad_italian
+  examples: |
+    - Se vivo all'estero come faccio a fare SPID?
+    - Sono un italiano all'estero, come posso fare SPID?
+    - Non risiedo in Italia, come ottengo SPID?
+
+- intent: faq_spid_abroad_foreign
+  examples: |
+    - Sono uno straniero in Italia, posso fare SPID?
+    - Cosa devo fare se sono uno straniero a cui serve SPID?
+    - Non sono italiano, posso fare SPID?
+
+- intent: faq_spid_firms
+  examples: |
+    - Una società può chiedere SPID?
+    - Sono titolare di una società, posso fare SPID per lei [società]?
+    - Un'azienda può chiedere SPID?
+
+- intent: faq_spid_credentials
+  examples: |
+    - Come posso recuperare le credenziali SPID?
+    - Ho perso le credenziali [SPID], come le posso recuperare?
+    - Come posso recuperare la password?
+    - Come posso recuperare password e username?
+    - Non mi ricordo la password.
+    - Non mi ricordo la mia username, come posso recuperarla?
+
+- intent: faq_spid_who_provider
+  examples: |
+    - Chi può rilasciarmi SPID?
+    - Chi è che rilascia SPID?
+    - Quali sono i provider di SPID?
+    - Quali sono gli enti che possono rilasciare SPID?
+
+- intent: faq_spid_who_user
+  examples: |
+    - Chi può richiedere SPID?
+    - Chi ha il diritto di chiedere SPID?
+    - Quali sono i requisiti per chiedere SPID?
+    - Chi può chiedere SPID?
+
+- intent: faq_spid_aggregators
+  examples: |
+    - Chi sono i soggetti aggregatori?
+    - Chi è un soggetto aggregatore?
+    - Cos'è un soggetto aggregatore?
+    - Quali sono gli enti che possono rilasciare SPID?
+
+- intent: bot_challenge
+  examples: |
+    - Sei un robot?
+    - Sei umano?
+    - Sto parlando con un robot?
+    - Sto parlando con un umano?
+    - Sto parlando con un bot?
+    - Sei un bot?
+    - Come ti chiami?
+    - Qual'è il tuo nome?
+
+- intent: start
+  examples: |
+    - /start
+    - start

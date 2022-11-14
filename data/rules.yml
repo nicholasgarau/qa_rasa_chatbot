@@ -1,0 +1,93 @@
+version: "3.1"
+
+rules:
+
+- rule: Say hi to the users
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_definition
+  - action: utter_faq_definition
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_creation_how_where
+  - action: utter_faq_creation_how_where
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_creation_cost
+  - action: utter_faq_creation_cost
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_time
+  - action: utter_faq_time
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_security_levels
+  - action: utter_faq_security_levels
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_security_personal
+  - action: utter_faq_security_personal
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_abroad_italian
+  - action: utter_faq_abroad_italian
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_abroad_foreign
+  - action: utter_faq_abroad_foreign
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_firms
+  - action: utter_faq_firms
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_credentials
+  - action: utter_faq_credentials
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_who_provider
+  - action: utter_faq_who_provider
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_who_user
+  - action: utter_faq_who_user
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq_spid_aggregators
+  - action: utter_faq_aggregators
+
+- rule: respond to challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_bot_challenge
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: Greet the user in Telegram
+  steps:
+  - intent: start
+  - action: utter_greet
