@@ -22,22 +22,30 @@ nlu:
 - intent: faq_spid_definition
   examples: |
     - Che cos'è SPID?
+    - Che cos'è spid?
     - Di cosa [SPID] si tratta?
     - Cos'è SPID?
-    - Dove posso fare SPID?
+    - Cos'è spid?
     - Come è fatto l'ecosistema SPID?
 
 - intent: faq_spid_creation_how_where
   examples: |
     - Come posso fare SPID?
+    - Come posso fare spid?
     - Dove posso farlo [SPID]?
     - Dove devo andare per fare SPID?
+    - Dove devo andare per fare spid?
     - Cosa devo fare per avere SPID?
+    - Cosa devo fare per avere spid?
+    - Devo fare SPID
+    - Defo fare spid
 
 - intent: faq_spid_creation_cost
   examples: |
     - SPID è gratis?
+    - spid è gratis?
     - SPID è gratuito?
+    - spid è gratuito?
     - è gratuito farlo [SPID]?
     - è gratis [SPID]?
     - è gratuito [SPID]?
@@ -47,15 +55,20 @@ nlu:
 - intent: faq_spid_time
   examples: |
     - Quanto tempo ci vuole per avere SPID?
+    - Quanto tempo ci vuole per avere spid?
     - Quanto ci mettono a farmi SPID?
+    - Quanto ci mettono a farmi spid?
     - In quanto tempo me lo fanno [SPID]?
     - Quanto ci vuole per fare SPID?
 
 - intent: faq_spid_security_levels
   examples: |
     - Quali sono i livelli di sicurezza di SPID?
+    - Quali sono i livelli di sicurezza di spid?
     - Cosa sono i tre livelli di sicurezza di SPID?
+    - Cosa sono i tre livelli di sicurezza di spid?
     - Mi spieghi i tre livelli di sicurezza di SPID?
+    - Mi spieghi i tre livelli di sicurezza di spid?
 
 - intent: faq_spid_security_personal
   examples: |
@@ -78,12 +91,15 @@ nlu:
 - intent: faq_spid_firms
   examples: |
     - Una società può chiedere SPID?
+    - Una società può chiedere spid?
     - Sono titolare di una società, posso fare SPID per lei [società]?
     - Un'azienda può chiedere SPID?
+    - Un'azienda può chiedere spid?
 
 - intent: faq_spid_credentials
   examples: |
     - Come posso recuperare le credenziali SPID?
+    - Come posso recuperare le credenziali spid?
     - Ho perso le credenziali [SPID], come le posso recuperare?
     - Come posso recuperare la password?
     - Come posso recuperare password e username?
@@ -100,9 +116,11 @@ nlu:
 - intent: faq_spid_who_user
   examples: |
     - Chi può richiedere SPID?
+    - Chi può richiedere spid?
     - Chi ha il diritto di chiedere SPID?
     - Quali sono i requisiti per chiedere SPID?
     - Chi può chiedere SPID?
+    - Chi può chiedere spid?
 
 - intent: faq_spid_aggregators
   examples: |
